@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himanshu Ojha.com</title>
+    <style>
+        /* Core Terminal Theme Variables */
+        :root {
+            --bg-color: #0a0e14;
+            --card-bg: #101520;
+            --neon-green: #00ff66;
+            --neon-blue: #00e5ff;
+            --text-main: #e2e8f0;
+            --text-dim: #64748b;
+            --border-color: #1e293b;
+        }
+
+        /* Base Setup */
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Main Container */
+        .project-container {
+            max-width: 800px;
+            width: 100%;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-top: 4px solid var(--neon-green);
+            border-radius: 4px;
+            padding: 30px;
+            box-shadow: 0 0 30px rgba(0, 255, 102, 0.05);
+        }
+
+        /* Top Status Bar Decorator */
+        .terminal-header {
+            display: flex;
+            justify-content: space-between;
+            color: var(--text-dim);
+            font-size: 12px;
+            margin-bottom: 30px;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        /* Project Heading */
+        h1.project-title {
+            color: var(--neon-green);
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .project-subtitle {
+            color: var(--text-dim);
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+        }
+
+        /* Project Image placeholder */
+        .project-image-box {
+            width: 100%;
+            height: 350px;
+            background: #05070a;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+
+        /* Scanline Overlay Grid effect */
+        .project-image-box::before {
+            content: " ";
+            display: block;
+            position: absolute;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            z-index: 2;
+            background-size: 100% 4px, 3px 100%;
+            pointer-events: none;
+        }
+
+        .project-image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.7;
+        }
+
+        /* Content Sections */
+        .section-title {
+            color: var(--neon-blue);
+            font-size: 1.2rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-title::before {
+            content: "> ";
+            margin-right: 8px;
+            color: var(--neon-green);
+        }
+
+        p {
+            line-height: 1.6;
+            color: var(--text-main);
+            margin: 0 0 15px 0;
+        }
+
+        /* Component Tags Grid */
+        .components-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+
+        .component-tag {
+            background: #161f30;
+            border: 1px solid var(--neon-blue);
+            color: var(--neon-blue);
+            padding: 6px 12px;
+            border-radius: 3px;
+            font-size: 0.85rem;
+        }
+
+        /* Difficulties Alert Box */
+        .difficulties-box {
+            background: rgba(255, 74, 74, 0.05);
+            border-left: 3px solid #ff4a4a;
+            padding: 15px 20px;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .difficulties-box p {
+            color: #ff9999;
+            margin-bottom: 10px;
+        }
+        
+        .difficulties-box p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="project-container">
+        <!-- Terminal Header Metadata -->
+        <div class="terminal-header">
+            <span>SECURE_CONNECTION: ACTIVE</span>
+            <span>SYSTEM_LOG: #0492</span>
+        </div>
+
+        <!-- Heading -->
+        <h1 class="project-title">JARVIS : The Desktop Assistant</h1>
+        <div class="project-subtitle">A desktop AI assistant featuring voice command processing, speech recognition, and Gemini support for hands-free desktop automation.</div>
+
+        <!-- Picture of Project -->
+        <div class="project-image-box">
+            <!-- Replace the src URL with your actual project screenshot or layout blueprint image -->
+            <img src="C:\Users\Abhishek Ojha\Desktop\images\jarvis.png" alt="System Infrastructure Matrix Grid">
+        </div>
+
+        <!-- Project Overview -->
+        <div class="section-title">Overview</div>
+        <p>This desktop assistant is inspired by the Avengers movies and powered by Gemini. Designed to streamline desktop automation, it executes complex workflows through simple voice or text commands. For example, when instructed to 'create an essay on [topic],' the assistant automatically searches Google, compiles the relevant information, writes it into a Notepad file, and saves it directly to the desktop. It can also set timers and answer general knowledge questions. While the current version relies on code generated by ChatGPT and Gemini, I am actively working to refine and improve its capabilities.</p>
+        <p><font color="yellow">I played no role in developing this project; I simply copied and pasted the code from ChatGPT and Gemini.</font></p>
+        <!-- Components Used -->
+        <div class="section-title">Components_Deployed</div>
+        <div class="components-grid">
+            <span class="component-tag">Python 3.10</span>
+            <span class="component-tag">Speech recognition</span>
+            <span class="component-tag">Pyttsx3</span>
+            <span class="component-tag">pygame</span>
+            <span class="component-tag">datetime</span>
+            <span class="component-tag">Os</span>
+            <span class="component-tag">webbrowser</span>
+            <span class="component-tag">PyautoGUI</span>
+            <span class="component-tag">Gemini API</span>
+        </div>
+
+        <!-- Difficulties Encountered -->
+        <div class="section-title">Dificulties faced my me while making this</div>
+        <div class="difficulties-box">
+            <p><strong>[ERROR_01] Library Installation Failure : </strong>I tried to install the SpeechRecognition and pyttsx3 libraries, but I kept getting errors saying they were missing. So, I used ChatGPT and Gemini to help me fix the problem.</p>
+            <p><strong>[ERROR_02] AttributeError : </strong>While running the code, I kept getting an AttributeError saying 'attribute not found.' Since I couldn't fix it, I used ChatGPT and Gemini to resolve the issue.</p>
+        </div>
+    </div>
+
+</body>
+</html>
